@@ -176,7 +176,7 @@ function App() {
               </button>
             </div>
 
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden" aria-label="Toggle Menu">
               {isMenuOpen ? <X /> : <Menu />}
             </button>
           </div>
