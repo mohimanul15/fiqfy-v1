@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Package, TrendingUp, Clock, Shield, CheckCircle, Menu, X, Star, Zap, Users, BarChart3 } from 'lucide-react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Framer Motion-like animation hook
 const useInView = (ref) => {
@@ -505,6 +506,7 @@ function App() {
           animation: slideIn 0.5s ease-out;
         }
       `}</style>
+      <SpeedInsights/>
     </div>
   );
 }
